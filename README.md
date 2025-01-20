@@ -1,7 +1,7 @@
 # Controle de Pinos GPIO - BitDogLab
 
 Vídeo sobre o projeto:
-[![Como utilizar o projeto](https://img.youtube.com/vi/GFi8QFWOg74/maxresdefault.jpg)(https://www.youtube.com/watch?v=GFi8QFWOg74)
+[![Como utilizar o projeto](https://www.youtube.com/watch?v=GFi8QFWOg74)
 
 
 ## Sobre o Projeto
