@@ -14,7 +14,7 @@ Este projeto, desenvolvido no contexto do **EmbarcaTech**, tem como objetivo exp
    - **Tecla D**: Aciona os três LEDs simultaneamente.
 2. **Interações adicionais**:
    - **Tecla #**: Emite som pelo buzzer.
-   - **Tecla * **: Acende o LED vermelho e, após um tempo, aciona o buzzer.
+   - **Tecla \***: Acende o LED vermelho e, após um tempo, aciona o buzzer.
 
 ### Tecnologias Utilizadas:
 - **Microcontrolador**: RP2040 da placa Raspberry Pi Pico W.
