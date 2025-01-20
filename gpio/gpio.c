@@ -2,6 +2,11 @@
 #include "pico/stdlib.h"
 #include "hardware/pwm.h"
 
+#define LED_RED 13
+#define LED_GREEN 11
+#define LED_BLUE 12
+#define BUZZER 21
+
 #define BUZZER_PIN 21 //Porta associada ao Buzzer
 #define linhas 4  // Definindo Linhas da Matriz
 #define colunas 4 // Definindo colunas da Matriz
@@ -24,7 +29,31 @@ const char key_map[linhas][colunas] = { // criação da função para fazer o ma
 
     {'*', '0', '#', 'D'}};
 
-    
+
+void init_gpio() {
+    // Inicializar LEDs como saída
+    gpio_init(LED_RED);
+    gpio_set_dir(LED_RED, GPIO_OUT);
+    gpio_put(LED_RED, 0); // Inicialmente desligado
+
+    gpio_init(LED_GREEN);
+    gpio_set_dir(LED_GREEN, GPIO_OUT);
+    gpio_put(LED_GREEN, 0); // Inicialmente desligado
+
+    gpio_init(LED_BLUE);
+    gpio_set_dir(LED_BLUE, GPIO_OUT);
+    gpio_put(LED_BLUE, 0); // Inicialmente desligado
+
+    // Inicializar buzzer como saída
+    gpio_init(BUZZER);
+    gpio_set_dir(BUZZER, GPIO_OUT);
+    gpio_put(BUZZER, 0); // Inicialmente desligado
+}
+
+// Função para acionar periféricos
+void control_output(uint gpio, bool state) {
+    gpio_put(gpio, state);
+}
 
 void keypad_init()
 {
@@ -177,10 +206,19 @@ int main()
                 gpio_put(LED_G, 0);
                 break;
             case '*':
-                // LED OFF
-                gpio_put(LED_R, 0);
-                gpio_put(LED_B, 0);
-                gpio_put(LED_G, 0);
+                // Simulação de controle simples
+                printf("Ligando LED vermelho\n");
+                control_output(LED_RED, true);
+                sleep_ms(500);
+
+                printf("Desligando LED vermelho\n");
+                control_output(LED_RED, false);
+                sleep_ms(500);
+
+                gpio_set_function(BUZZER_PIN, GPIO_FUNC_PWM);
+                buzz(550, 500); //Frequência de 550Hz por um tempo de 500ms
+                sleep_ms(500);
+                
                 break;
             case '0':
                 // LED OFF
