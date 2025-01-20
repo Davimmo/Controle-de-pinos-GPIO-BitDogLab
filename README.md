@@ -5,7 +5,7 @@ Vídeo sobre o projeto:
 
 
 https://github.com/user-attachments/assets/0f697bc1-6660-49e7-bf3b-385d829d3e52
-
+(Assista em melhor qualidade no link acima pelo youtube)
 
 
 ## Sobre o Projeto
