@@ -4,6 +4,10 @@ Vídeo sobre o projeto:
 [Como utilizar o projeto](https://www.youtube.com/watch?v=GFi8QFWOg74)
 
 
+https://github.com/user-attachments/assets/0f697bc1-6660-49e7-bf3b-385d829d3e52
+
+
+
 ## Sobre o Projeto
 Este projeto, desenvolvido no contexto do **EmbarcaTech**, tem como objetivo explorar os terminais GPIO do microcontrolador **RP2040** da placa **Raspberry Pi Pico W**. Através de uma integração com o simulador **Wokwi** no **Visual Studio Code**, é possível realizar a simulação e verificação do funcionamento dos pinos GPIO para controle de LEDs e um buzzer.
 
