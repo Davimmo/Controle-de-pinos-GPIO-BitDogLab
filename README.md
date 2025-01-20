@@ -53,8 +53,3 @@ Este projeto, desenvolvido no contexto do **EmbarcaTech**, tem como objetivo exp
 ## Contribuições
 Contribuições são bem-vindas! Se você encontrar um bug ou tiver uma ideia para melhorar o projeto, fique à vontade para abrir uma **Issue** ou enviar um **Pull Request**.
 
----
-
-## Licença
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
