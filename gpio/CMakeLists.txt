@@ -63,3 +63,5 @@ pico_add_extra_outputs(GPIO)
 if (PICO_CYW43_SUPPORTED)
     target_link_libraries(GPIO pico_cyw43_arch_none)
 endif()
+
+target_link_libraries(GPIO hardware_pwm)
