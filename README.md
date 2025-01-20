@@ -1,7 +1,8 @@
 # Controle de Pinos GPIO - BitDogLab
 
 Vídeo sobre o projeto:
-https://youtu.be/tvnHadNkMcc
+[![Como utilizar o projeto](https://img.youtube.com/vi/GFi8QFWOg74/maxresdefault.jpg)(https://www.youtube.com/watch?v=GFi8QFWOg74)
+
 
 ## Sobre o Projeto
 Este projeto, desenvolvido no contexto do **EmbarcaTech**, tem como objetivo explorar os terminais GPIO do microcontrolador **RP2040** da placa **Raspberry Pi Pico W**. Através de uma integração com o simulador **Wokwi** no **Visual Studio Code**, é possível realizar a simulação e verificação do funcionamento dos pinos GPIO para controle de LEDs e um buzzer.
